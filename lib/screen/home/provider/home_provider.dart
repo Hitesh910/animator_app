@@ -1,3 +1,4 @@
+import 'package:animator_app/utils/helper/shared_helper.dart';
 import 'package:animator_app/utils/json_helper.dart';
 import 'package:flutter/material.dart';
 
@@ -6,6 +7,8 @@ class HomeProvider with ChangeNotifier
 {
   List<PlanetModel> planetList1 = [];
   bool theme = false;
+  bool? saveTheme;
+  SharedHelper helper = SharedHelper();
 
   Future<void> getData()
   async {
@@ -17,7 +20,15 @@ class HomeProvider with ChangeNotifier
 
   void changeTheme(bool value)
   {
+
+    helper.setTheme(value);
     theme = value;
     notifyListeners();
+  }
+
+  Future<void> getTheme()
+  async {
+   saveTheme =await helper.getTheme();
+   notifyListeners();
   }
 }

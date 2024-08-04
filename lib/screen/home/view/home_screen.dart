@@ -54,31 +54,36 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             itemBuilder: (context, index) {
               return Column(
                 children: [
-                  Container(
-                    height: 160,
-                    width: 160,
-                    // color: Colors.red,
-                    margin: const EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                      // color: Colors.white,
-                      gradient: LinearGradient(colors: [
-                        Colors.white54,
-                        Colors.transparent.withOpacity(0.1)
-                      ]),
-                      borderRadius: const BorderRadius.all(Radius.circular(10)),
-                      // image: DecorationImage(
-                      //   image: NetworkImage(
-                      //       "${providerR!.planetList1[index].image}"),
-                      // ),
-                    ),
-                    child: index != 8 ?RotationTransition(
-                      turns: animationController!,
-                      child: Image(
-                        image: NetworkImage(
-                            "${providerR!.planetList1[index].image}"),height: 120,width: 120,
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, 'detail',arguments: index);
+                    },
+                    child: Container(
+                      height: 160,
+                      width: 160,
+                      // color: Colors.red,
+                      margin: const EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                        // color: Colors.white,
+                        gradient: LinearGradient(colors: [
+                          Colors.white54,
+                          Colors.transparent.withOpacity(0.1)
+                        ]),
+                        borderRadius: const BorderRadius.all(Radius.circular(10)),
+                        // image: DecorationImage(
+                        //   image: NetworkImage(
+                        //       "${providerR!.planetList1[index].image}"),
+                        // ),
                       ),
-                    )
-                    : Image(image: NetworkImage("${providerR!.planetList1[index].image}"))
+                      child: index != 8 ?RotationTransition(
+                        turns: animationController!,
+                        child: Image(
+                          image: NetworkImage(
+                              "${providerR!.planetList1[index].image}"),height: 120,width: 120,
+                        ),
+                      )
+                      : Image(image: NetworkImage("${providerR!.planetList1[index].image}"))
+                    ),
                   ),
                   Text(
                     "${providerR!.planetList1[index].name}",

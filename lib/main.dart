@@ -12,8 +12,9 @@ void main() {
       providers: [ChangeNotifierProvider.value(value: HomeProvider())],
       child: Consumer<HomeProvider>(
         builder: (BuildContext context, HomeProvider value, Widget? child) {
-        return  MaterialApp(
-            theme:value.theme == false ?light:dark,
+          value.getTheme();
+          return MaterialApp(
+            theme: value.theme == false ? light : dark,
             routes: app_routes,
           );
         },
