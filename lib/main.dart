@@ -14,7 +14,7 @@ void main() {
         builder: (BuildContext context, HomeProvider value, Widget? child) {
           value.getTheme();
           return MaterialApp(
-            theme: value.theme == false ? light : dark,
+            theme: value.saveTheme == false ? light : dark,
             routes: app_routes,
           );
         },

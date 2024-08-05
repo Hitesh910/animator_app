@@ -69,15 +69,23 @@ class _DetailScreenState extends State<DetailScreen>
                     ),
                   ),
                 ),
-                AnimatedTextKit(repeatForever: false,pause: Duration(seconds: 4),isRepeatingAnimation: false,
-                  animatedTexts: [
-                    WavyAnimatedText(
-                      "${providerR!.planetList1[index!].name}",
-                      textStyle: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white),
+                Row(
+                  children: [
+                    AnimatedTextKit(repeatForever: false,pause: Duration(seconds: 4),isRepeatingAnimation: false,
+                      animatedTexts: [
+                        WavyAnimatedText(
+                          "${providerR!.planetList1[index!].name}",
+                          textStyle: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ],
                     ),
+                    Spacer(),
+                    IconButton(onPressed: () {
+                      providerR!.setData(providerR!.planetList1[index!].name!, providerR!.planetList1[index!].image!);
+                    }, icon: Icon(Icons.favorite))
                   ],
                 ),
                 SizedBox(

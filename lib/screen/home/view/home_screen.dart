@@ -36,6 +36,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Animator App"),
+        actions: [
+          IconButton(onPressed: () {
+            Navigator.pushNamed(context, 'favourite');
+          }, icon: Icon(Icons.bookmark
+          ))
+        ],
       ),
       body: Stack(
         children: [
