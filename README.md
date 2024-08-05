@@ -1,16 +1,13 @@
-# animator_app
+<p>
+    <img src = "https://github.com/user-attachments/assets/4da3fce9-fb7b-4d4e-a96d-d8c8c8f7d69e"height="800"width="400"/>
+  <img src ="https://github.com/user-attachments/assets/94fa9d10-0e19-4c36-98bd-9a28f10761bf"height="800"width="400"/>
+  <img src = "https://github.com/user-attachments/assets/c4ed9f95-66e3-43fc-9a9f-7e57974137fe"height="800"width="400"/>
+  <img src = "https://github.com/user-attachments/assets/d5b765a6-a619-4966-9d16-e7af9c10afca"height="800"width="400"/>
+<!--   <img src = "https://github.com/user-attachments/assets/136d34fb-a8e9-4a8e-add6-334ef3f06593"height="800"width="400"/> -->
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+</p>
+<!-- ![Screenshot_20240805_122358](https://github.com/user-attachments/assets/4da3fce9-fb7b-4d4e-a96d-d8c8c8f7d69e)
+![Screenshot_20240805_122337](https://github.com/user-attachments/assets/94fa9d10-0e19-4c36-98bd-9a28f10761bf)
+![Screenshot_20240805_122309](https://github.com/user-attachments/assets/c4ed9f95-66e3-43fc-9a9f-7e57974137fe)
+![Screenshot_20240805_122249](https://github.com/user-attachments/assets/d5b765a6-a619-4966-9d16-e7af9c10afca)
+ -->
